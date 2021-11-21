@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2em;
+}
+
+header img {
+  max-width: 96px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.new-member-form {
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  background: #f76c6c;
+  padding: 0.25em 0;
+}
+
+.error{
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+
+.container-board{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+
+}
+
+.name-board{
+  display: grid;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  
+}
+
+.btn{
+    background-color: #68A7FC;
+    border: none;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.icon{
+  height: 2rem;
+  width: 2rem;
+}
+
+.container-center{
+  text-align: center;
+}
+
+.search-bar{
+  text-align: center;
+}
+
+input[type=text]{
+  width:30%;
+  border:2px solid #aaa;
+  border-radius:4px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+}
+
+input[type=text]:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerBlue;
+}
+
+button {
+  height: 2.75em;
+  background-color: #0f33ff;
+  border: none;
+  border-radius: 4px;
+  letter-spacing: 3px;
+  color:white;
+ 
+}
+
+button:hover {
+  background-color: #f76c6c;
+}

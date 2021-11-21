@@ -26,18 +26,17 @@ SET time_zone = "+00:00";
 -- Structure de la table `item`
 --
 
-CREATE TABLE `item` (
+CREATE TABLE `users` (
   `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
+  `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `item`
 --
 
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
+INSERT INTO `users` (`id`, `name`) VALUES
+(1, 'Thomas'),
 
 --
 -- Index pour les tables exportées
@@ -46,7 +45,7 @@ INSERT INTO `item` (`id`, `title`) VALUES
 --
 -- Index pour la table `item`
 --
-ALTER TABLE `item`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --

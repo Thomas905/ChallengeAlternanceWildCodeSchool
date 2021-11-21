@@ -1,0 +1,10 @@
+        {% for user in users %}
+        <div class="name-board">
+            <p>{{ user.name }}</p>
+            <div class="container-icon">
+                <a href="edit/?id={{user.id}}" type="submit" value="{{user.id}}" onclick="myFunction()"><img class="icon" src="/assets/images/edit.png"></img></a>
+                {# <a href="edit/?id={{user.id}}" type="submit" value="{{user.id}}" onclick="myFunction()"><img class="icon" src="/assets/images/edit.png"></img></a> #}
+                <a href="delete/?id={{ user.id }}" value="{{ user.id }}"><img class="icon" src="assets/images/delete.png"></img></a>
+            </div>
+        </div>
+        {% endfor %} 

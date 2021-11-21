@@ -1,0 +1,38 @@
+{% extends 'layout.html.twig' %}
+{% block javascript %}
+    <script type="text/javascript" src="/assets/js/Homepage.js"></script>
+{% endblock %}
+
+{% block content %}
+<!-- Header section -->
+<header>
+  <h1>
+    <a href="/"><img src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png" alt="Wild Code School logo" /></a>
+    Les Argonautes
+  </h1>
+</header>
+
+<!-- Main section -->
+<main>
+  
+  <!-- New member form -->
+  <h2>Modifier un(e) Argonaute</h2>
+    <div class="error">
+    {% for error in errors %}
+        <p>{{error}}</p>
+    {% endfor %}
+  </div>
+  <div class="container-center">
+    <form method="POST">
+      <input type="hidden" value="{{ user.id }}" name="id">
+        <input id="name" name="name" type="text" placeholder="{{ user.name }}" value="{{ user.name }}" />
+        <button type="submit">Modififier</button>
+    </form>
+  </div>  
+</main>
+
+<footer>
+  <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
+</footer>
+
+{% endblock %}
